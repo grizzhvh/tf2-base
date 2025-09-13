@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\MinHook\buffer.c" />
+    <ClCompile Include="include\MinHook\hde\hde32.c" />
+    <ClCompile Include="include\MinHook\hde\hde64.c" />
+    <ClCompile Include="include\MinHook\hook.c" />
+    <ClCompile Include="include\MinHook\trampoline.c" />
+    <ClCompile Include="src\core\core.cpp" />
+    <ClCompile Include="src\core\features\engineprediction\engineprediction.cpp" />
+    <ClCompile Include="src\core\features\entities\entities.cpp" />
+    <ClCompile Include="src\core\hooks\clientmodeshared_createmove.cpp" />
+    <ClCompile Include="src\core\hooks\ibaseclientdll_framestagenotify.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\sdk\tf2\bitbuf.cpp" />
+    <ClCompile Include="src\sdk\tf2\keyvalues.cpp" />
+    <ClCompile Include="src\sdk\tf2\MD5.cpp" />
+    <ClCompile Include="src\sdk\tf2\netmessages.cpp" />
+    <ClCompile Include="src\sdk\tf2\netvars\netvars.cpp" />
+    <ClCompile Include="src\utility\color\color.cpp" />
+    <ClCompile Include="src\utility\hookmanager\hookmanager.cpp" />
+    <ClCompile Include="src\utility\interfacemanager\interfacemanager.cpp" />
+    <ClCompile Include="src\utility\memory\memory.cpp" />
+    <ClCompile Include="src\utility\signaturemanager\signaturemanager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\MinHook\buffer.h" />
+    <ClInclude Include="include\MinHook\hde\hde32.h" />
+    <ClInclude Include="include\MinHook\hde\hde64.h" />
+    <ClInclude Include="include\MinHook\hde\pstdint.h" />
+    <ClInclude Include="include\MinHook\hde\table32.h" />
+    <ClInclude Include="include\MinHook\hde\table64.h" />
+    <ClInclude Include="include\MinHook\MinHook.h" />
+    <ClInclude Include="include\MinHook\trampoline.h" />
+    <ClInclude Include="src\core\core.h" />
+    <ClInclude Include="src\core\features\engineprediction\engineprediction.h" />
+    <ClInclude Include="src\core\features\entities\entities.h" />
+    <ClInclude Include="src\sdk\sdk.h" />
+    <ClInclude Include="src\sdk\tf2\activity.h" />
+    <ClInclude Include="src\sdk\tf2\analogcode.h" />
+    <ClInclude Include="src\sdk\tf2\basehandle.h" />
+    <ClInclude Include="src\sdk\tf2\basetypes.h" />
+    <ClInclude Include="src\sdk\tf2\bitbuf.h" />
+    <ClInclude Include="src\sdk\tf2\bspflags.h" />
+    <ClInclude Include="src\sdk\tf2\buttoncode.h" />
+    <ClInclude Include="src\sdk\tf2\cdll_int.h" />
+    <ClInclude Include="src\sdk\tf2\checksum_crc.h" />
+    <ClInclude Include="src\sdk\tf2\client.h" />
+    <ClInclude Include="src\sdk\tf2\clientmode_shared.h" />
+    <ClInclude Include="src\sdk\tf2\client_class.h" />
+    <ClInclude Include="src\sdk\tf2\cmodel.h" />
+    <ClInclude Include="src\sdk\tf2\commonmacros.h" />
+    <ClInclude Include="src\sdk\tf2\const.h" />
+    <ClInclude Include="src\sdk\tf2\convar.h" />
+    <ClInclude Include="src\sdk\tf2\Cursor.h" />
+    <ClInclude Include="src\sdk\tf2\c_baseanimating.h" />
+    <ClInclude Include="src\sdk\tf2\c_basecombatcharacter.h" />
+    <ClInclude Include="src\sdk\tf2\c_basecombatweapon.h" />
+    <ClInclude Include="src\sdk\tf2\c_baseentity.h" />
+    <ClInclude Include="src\sdk\tf2\c_baseflex.h" />
+    <ClInclude Include="src\sdk\tf2\c_baseobject.h" />
+    <ClInclude Include="src\sdk\tf2\c_baseplayer.h" />
+    <ClInclude Include="src\sdk\tf2\c_baseprojectile.h" />
+    <ClInclude Include="src\sdk\tf2\c_playerresource.h" />
+    <ClInclude Include="src\sdk\tf2\c_tf_player.h" />
+    <ClInclude Include="src\sdk\tf2\c_tf_playerresource.h" />
+    <ClInclude Include="src\sdk\tf2\datamap.h" />
+    <ClInclude Include="src\sdk\tf2\deformations.h" />
+    <ClInclude Include="src\sdk\tf2\dt_common.h" />
+    <ClInclude Include="src\sdk\tf2\dt_recv.h" />
+    <ClInclude Include="src\sdk\tf2\GameEventListener.h" />
+    <ClInclude Include="src\sdk\tf2\gametrace.h" />
+    <ClInclude Include="src\sdk\tf2\globalvars_base.h" />
+    <ClInclude Include="src\sdk\tf2\IAppSystem.h" />
+    <ClInclude Include="src\sdk\tf2\icliententity.h" />
+    <ClInclude Include="src\sdk\tf2\icliententitylist.h" />
+    <ClInclude Include="src\sdk\tf2\iclientmode.h" />
+    <ClInclude Include="src\sdk\tf2\iclientnetworkable.h" />
+    <ClInclude Include="src\sdk\tf2\iclientrenderable.h" />
+    <ClInclude Include="src\sdk\tf2\iclientthinkable.h" />
+    <ClInclude Include="src\sdk\tf2\iclientunknown.h" />
+    <ClInclude Include="src\sdk\tf2\IColorCorrection.h" />
+    <ClInclude Include="src\sdk\tf2\iconvar.h" />
+    <ClInclude Include="src\sdk\tf2\icvar.h" />
+    <ClInclude Include="src\sdk\tf2\IEngineTrace.h" />
+    <ClInclude Include="src\sdk\tf2\ienginevgui.h" />
+    <ClInclude Include="src\sdk\tf2\igameevents.h" />
+    <ClInclude Include="src\sdk\tf2\igamemovement.h" />
+    <ClInclude Include="src\sdk\tf2\igameresources.h" />
+    <ClInclude Include="src\sdk\tf2\ihandleentity.h" />
+    <ClInclude Include="src\sdk\tf2\IHTML.h" />
+    <ClInclude Include="src\sdk\tf2\IImage.h" />
+    <ClInclude Include="src\sdk\tf2\iinput.h" />
+    <ClInclude Include="src\sdk\tf2\iinputsystem.h" />
+    <ClInclude Include="src\sdk\tf2\imageformat.h" />
+    <ClInclude Include="src\sdk\tf2\imaterial.h" />
+    <ClInclude Include="src\sdk\tf2\imaterialsystem.h" />
+    <ClInclude Include="src\sdk\tf2\imaterialsystemhardwareconfig.h" />
+    <ClInclude Include="src\sdk\tf2\imaterialvar.h" />
+    <ClInclude Include="src\sdk\tf2\IMatSystemSurface.h" />
+    <ClInclude Include="src\sdk\tf2\imdlcache.h" />
+    <ClInclude Include="src\sdk\tf2\imovehelper.h" />
+    <ClInclude Include="src\sdk\tf2\inetchannel.h" />
+    <ClInclude Include="src\sdk\tf2\inetchannelinfo.h" />
+    <ClInclude Include="src\sdk\tf2\inetmessage.h" />
+    <ClInclude Include="src\sdk\tf2\inetworkmessage.h" />
+    <ClInclude Include="src\sdk\tf2\inetworksystem.h" />
+    <ClInclude Include="src\sdk\tf2\inputenums.h" />
+    <ClInclude Include="src\sdk\tf2\interface.h" />
+    <ClInclude Include="src\sdk\tf2\iprediction.h" />
+    <ClInclude Include="src\sdk\tf2\ispatialpartition.h" />
+    <ClInclude Include="src\sdk\tf2\isteamcontroller.h" />
+    <ClInclude Include="src\sdk\tf2\istudiorender.h" />
+    <ClInclude Include="src\sdk\tf2\ISurface.h" />
+    <ClInclude Include="src\sdk\tf2\itexture.h" />
+    <ClInclude Include="src\sdk\tf2\itoolentity.h" />
+    <ClInclude Include="src\sdk\tf2\ivdebugoverlay.h" />
+    <ClInclude Include="src\sdk\tf2\IVguiMatInfo.h" />
+    <ClInclude Include="src\sdk\tf2\IVguiMatInfoVar.h" />
+    <ClInclude Include="src\sdk\tf2\iviewrender.h" />
+    <ClInclude Include="src\sdk\tf2\iviewrender_beams.h" />
+    <ClInclude Include="src\sdk\tf2\ivmodelinfo.h" />
+    <ClInclude Include="src\sdk\tf2\ivmodelrender.h" />
+    <ClInclude Include="src\sdk\tf2\ivrenderview.h" />
+    <ClInclude Include="src\sdk\tf2\KeyCode.h" />
+    <ClInclude Include="src\sdk\tf2\keyvalues.h" />
+    <ClInclude Include="src\sdk\tf2\lightdesc.h" />
+    <ClInclude Include="src\sdk\tf2\localflexcontroller.h" />
+    <ClInclude Include="src\sdk\tf2\MD5.h" />
+    <ClInclude Include="src\sdk\tf2\modes.h" />
+    <ClInclude Include="src\sdk\tf2\MouseCode.h" />
+    <ClInclude Include="src\sdk\tf2\multiplayer_animstate.h" />
+    <ClInclude Include="src\sdk\tf2\netadr.h" />
+    <ClInclude Include="src\sdk\tf2\netchannel.h" />
+    <ClInclude Include="src\sdk\tf2\netmessages.h" />
+    <ClInclude Include="src\sdk\tf2\netvars\netvars.h" />
+    <ClInclude Include="src\sdk\tf2\prediction.h" />
+    <ClInclude Include="src\sdk\tf2\random.h" />
+    <ClInclude Include="src\sdk\tf2\refcount.h" />
+    <ClInclude Include="src\sdk\tf2\renderutils.h" />
+    <ClInclude Include="src\sdk\tf2\shareddefs.h" />
+    <ClInclude Include="src\sdk\tf2\string_t.h" />
+    <ClInclude Include="src\sdk\tf2\studio.h" />
+    <ClInclude Include="src\sdk\tf2\texture_group_names.h" />
+    <ClInclude Include="src\sdk\tf2\tf_shareddefs.h" />
+    <ClInclude Include="src\sdk\tf2\tf_weaponbase.h" />
+    <ClInclude Include="src\sdk\tf2\trace.h" />
+    <ClInclude Include="src\sdk\tf2\usercmd.h" />
+    <ClInclude Include="src\sdk\tf2\utlvector.h" />
+    <ClInclude Include="src\sdk\tf2\vcollide.h" />
+    <ClInclude Include="src\sdk\tf2\VGUI.h" />
+    <ClInclude Include="src\sdk\tf2\view_shared.h" />
+    <ClInclude Include="src\sdk\tf2\vphysics.h" />
+    <ClInclude Include="src\sdk\tf2\vplane.h" />
+    <ClInclude Include="src\sdk\tf2\vtf.h" />
+    <ClInclude Include="src\utility\assert\assert.h" />
+    <ClInclude Include="src\utility\color\color.h" />
+    <ClInclude Include="src\utility\hash\hash.h" />
+    <ClInclude Include="src\utility\hookmanager\hookmanager.h" />
+    <ClInclude Include="src\utility\interfacemanager\interfacemanager.h" />
+    <ClInclude Include="src\utility\math\math.h" />
+    <ClInclude Include="src\utility\memory\memory.h" />
+    <ClInclude Include="src\utility\signaturemanager\signaturemanager.h" />
+    <ClInclude Include="src\utility\singleton\singleton.h" />
+    <ClInclude Include="src\utility\utility.h" />
+    <ClInclude Include="src\utility\vector\vector.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8fa616b6-b0e7-4fb2-96d6-183f41e850f8}</ProjectGuid>
+    <RootNamespace>tf2base</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pchf.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include\;$(IncludePath)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pchf.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include\;$(IncludePath)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
