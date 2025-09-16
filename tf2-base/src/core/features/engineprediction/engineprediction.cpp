@@ -23,7 +23,7 @@ void c_engineprediction::start(CUserCmd* pCmd)
 	if (!I::MoveHelper)
 		return;
 
-	if (const auto local = f::entities->getlocal())
+	if (const auto local = f::entities->get_local())
 	{
 		flags = local->m_fFlags();
 
